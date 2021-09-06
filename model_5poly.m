@@ -1,7 +1,7 @@
-
 function pos = X(x,t)
-    pos(1) = x(1)*t^5 + x(2)*t^4 + x(3)*t^3 + x(4)*t^2 +x(5)*t+x(6);
-    pos(2) = x(7)*t^5 + x(8)*power(t,4) + x(9)*power(t,3) + x(10)*power(t,2) +x(11)*t+x(12);
+
+    pos(1) = x(1)*t^5 + x(2)*t^4 + x(3)*t^3 + x(4)*t^2 +x(5)*t+x(6);% x
+    pos(2) = x(7)*t^5 + x(8)*power(t,4) + x(9)*power(t,3) + x(10)*power(t,2) +x(11)*t+x(12);% y
     pos(3) = gradient(pos(1),t); %diff_x
     pos(4) = gradient(pos(2),t); %diff_y
     pos(5) = gradient(pos(3),t); %diff_diff_x
